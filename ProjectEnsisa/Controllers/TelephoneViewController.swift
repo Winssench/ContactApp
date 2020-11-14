@@ -61,6 +61,23 @@ class TelephoneViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .normal, title: "Delete") { (action, view , completionHandler) in
+                   pList.remove(at: indexPath.row)
+                   tableView.reloadData()
+                   completionHandler(true)
+                   
+        }
+               
+        delete.image = UIImage(systemName: "trash")
+        delete.backgroundColor = .red
+               
+               //swipe actions
+        let swipe = UISwipeActionsConfiguration(actions: [delete])
+               
+        return swipe
+    }
+    
     func PersonHasChanged(_ person: Person)
     {
         tableView.reloadData()
