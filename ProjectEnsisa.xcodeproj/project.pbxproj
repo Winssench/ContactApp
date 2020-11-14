@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		789C41E7255B004D00DE244C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C41E6255B004D00DE244C /* Extensions.swift */; };
+		789C41EF255C3BB700DE244C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C41EE255C3BB700DE244C /* Person.swift */; };
+		789C41F3255C586500DE244C /* AjoutViewControlerFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C41F2255C586500DE244C /* AjoutViewControlerFinal.swift */; };
 		78BACBE8255ACD2A0053C95A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BACBE7255ACD2A0053C95A /* AppDelegate.swift */; };
 		78BACBEA255ACD2A0053C95A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BACBE9255ACD2A0053C95A /* SceneDelegate.swift */; };
-		78BACBEC255ACD2A0053C95A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BACBEB255ACD2A0053C95A /* ViewController.swift */; };
 		78BACBEF255ACD2A0053C95A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BACBED255ACD2A0053C95A /* Main.storyboard */; };
 		78BACBF1255ACD2D0053C95A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78BACBF0255ACD2D0053C95A /* Assets.xcassets */; };
 		78BACBF4255ACD2D0053C95A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BACBF2255ACD2D0053C95A /* LaunchScreen.storyboard */; };
+		78BACC01255ADD230053C95A /* NomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BACC00255ADD230053C95A /* NomViewController.swift */; };
+		78BACC03255ADD650053C95A /* TelephoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BACC02255ADD650053C95A /* TelephoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		789C41E6255B004D00DE244C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		789C41EE255C3BB700DE244C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		789C41F2255C586500DE244C /* AjoutViewControlerFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutViewControlerFinal.swift; sourceTree = "<group>"; };
 		78BACBE4255ACD2A0053C95A /* ProjectEnsisa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectEnsisa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BACBE7255ACD2A0053C95A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78BACBE9255ACD2A0053C95A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78BACBEB255ACD2A0053C95A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78BACBEE255ACD2A0053C95A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78BACBF0255ACD2D0053C95A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78BACBF3255ACD2D0053C95A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78BACBF5255ACD2D0053C95A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78BACC00255ADD230053C95A /* NomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomViewController.swift; sourceTree = "<group>"; };
+		78BACC02255ADD650053C95A /* TelephoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		78BACBE6255ACD2A0053C95A /* ProjectEnsisa */ = {
 			isa = PBXGroup;
 			children = (
-				78BACBE7255ACD2A0053C95A /* AppDelegate.swift */,
-				78BACBE9255ACD2A0053C95A /* SceneDelegate.swift */,
-				78BACBEB255ACD2A0053C95A /* ViewController.swift */,
-				78BACBED255ACD2A0053C95A /* Main.storyboard */,
-				78BACBF0255ACD2D0053C95A /* Assets.xcassets */,
-				78BACBF2255ACD2D0053C95A /* LaunchScreen.storyboard */,
+				78BACBFE255ADB4E0053C95A /* Resources */,
+				78BACBFD255ADB210053C95A /* Models */,
+				78BACBFC255ADB0D0053C95A /* Views */,
+				78BACBFB255ADB000053C95A /* Controllers */,
 				78BACBF5255ACD2D0053C95A /* Info.plist */,
 			);
 			path = ProjectEnsisa;
+			sourceTree = "<group>";
+		};
+		78BACBFB255ADB000053C95A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78BACC00255ADD230053C95A /* NomViewController.swift */,
+				78BACC02255ADD650053C95A /* TelephoneViewController.swift */,
+				789C41F2255C586500DE244C /* AjoutViewControlerFinal.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		78BACBFC255ADB0D0053C95A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78BACBF0255ACD2D0053C95A /* Assets.xcassets */,
+				78BACBFF255ADBB90053C95A /* StoryBoards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78BACBFD255ADB210053C95A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				789C41EE255C3BB700DE244C /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78BACBFE255ADB4E0053C95A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78BACBE7255ACD2A0053C95A /* AppDelegate.swift */,
+				78BACBE9255ACD2A0053C95A /* SceneDelegate.swift */,
+				789C41E6255B004D00DE244C /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78BACBFF255ADBB90053C95A /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				78BACBED255ACD2A0053C95A /* Main.storyboard */,
+				78BACBF2255ACD2D0053C95A /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78BACBEC255ACD2A0053C95A /* ViewController.swift in Sources */,
+				789C41F3255C586500DE244C /* AjoutViewControlerFinal.swift in Sources */,
 				78BACBE8255ACD2A0053C95A /* AppDelegate.swift in Sources */,
+				789C41E7255B004D00DE244C /* Extensions.swift in Sources */,
 				78BACBEA255ACD2A0053C95A /* SceneDelegate.swift in Sources */,
+				78BACC01255ADD230053C95A /* NomViewController.swift in Sources */,
+				789C41EF255C3BB700DE244C /* Person.swift in Sources */,
+				78BACC03255ADD650053C95A /* TelephoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9JU5XX24H;
 				INFOPLIST_FILE = ProjectEnsisa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9JU5XX24H;
 				INFOPLIST_FILE = ProjectEnsisa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
